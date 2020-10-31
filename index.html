@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Olá, <span id="nome">mundo</span>!</h1>
+
+  <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+    <label>Insira nome:
+      <input id="nomeInput" type="text" value='' name='$nome' required>
+    </label>
+    <br>
+    <label>Insira nacionalidade:
+      <input id="nacionalidadeInput" type="text" name='$nacionalidade' required>
+       
+    </label>
+    <br>
+    <label>
+        Email:
+    <input type="text" name="replyTo" value=""> 
+    </label>
+    <br>
+    <label>Insira idade:
+      <input id="idadeInput" type="number" name='$idade' required>
+    </label>
+    <input type='hidden' name='accessKey' value="254ea580-af44-4910-b1a9-bfb9cc5330d5">
+    <input type="hidden" name="subject" value="Test from submit">
+    <input type="hidden" id='msg' name='message' value=''>
+    <input type="hidden" name="redirectTo" value="https://toti.site">
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+<p id='aviso' class='alert'> </p>    
+    <p> Lista de alunos:</p>
+    <ul id='lista'>
+    </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
